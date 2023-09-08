@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Component</title>
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .input-container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .input-container input {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .button {
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .item-info {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .item-buttons {
+      display: inline-block;
+    }
+
+    .edit-button {
+      margin-right: 5px;
+    }
+
+    .delete-button {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input-container">
+      <input type="text" id="item-id" placeholder="Item ID">
+      <input type="text" id="item-name" placeholder="Item Name">
+      <button class="button" onclick="addItem()">Add Item</button>
+    </div>
+    <div id="items-container"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
